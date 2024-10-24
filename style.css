@@ -1,0 +1,64 @@
+.container1 {
+    background-color: blue;
+    border-radius: -999px;
+    width: 120px;
+    height: 120px;
+    border-color: black;
+}
+
+.container1:hover {
+    background-color: bisque;
+    rotate: 180deg;
+    scale: 2.5;
+}
+
+.container1 {
+    transition-duration: 2.1s;
+}
+
+.container2 {
+    border:  solid rgb(255, 255, 255);
+    height: fit-content;
+    width: 700px;
+}
+
+.circle {
+    background-color: red;
+    height: 200px;
+    width: 200px;
+    border-radius: 100%;
+    animation: move 4.6s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes move {
+    0% {
+        transform: translate(0px, 0px);
+    }
+    50% {
+        transform: translate(500px, 0px);
+    }
+}      
+
+.spinner {
+    animation:spinner 2s linear infinite ;
+    width: 200px;
+    background-color: black;
+}
+
+@keyframes spinner {
+    0% {
+        rotate: 0deg;
+    }
+    100% {
+        rotate: 360deg;
+    }
+}
+
+body {
+    background-color: black;
+}
+
+
+
+
